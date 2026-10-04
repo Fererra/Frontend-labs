@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Сухоруков М. С., ІМ-43. Лабораторна робота №2. Варіант 4</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 20px 0;
+            width: 100%;
+            max-width: 900px;
+            table-layout: fixed;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+        }
+
+        td {
+            border: 2px solid #333;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            height: 60px;
+            transition: all 0.3s ease;
+        }
+
+        .cell-row-1 {
+            background-color: #048f8f;
+            color: #ffffff;
+        }
+
+        .cell-row-1:hover {
+            background-color: #ffffff;
+            color: #048f8f;
+        }
+
+        .cell-row-2 {
+            background-color: #f5f504;
+            color: #000000;
+        }
+
+        .cell-row-2:hover {
+            background-color: #000000;
+            color: #f5f504;
+        }
+
+        .cell-row-3 {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <colgroup>
+            <col style="width: 15%;">
+            <col style="width: 15%;">
+            <col style="width: 30%;">
+            <col style="width: 20%;">
+            <col style="width: 20%;">
+        </colgroup>
+
+        <tr>
+            <td class="cell-row-1">Сухоруков</td>
+            <td class="cell-row-1">Микита</td>
+            <td class="cell-row-1" rowspan="2">Сергійович</td>
+            <td class="cell-row-1"></td>
+            <td class="cell-row-1" rowspan="2"></td>
+        </tr>
+
+        <tr>
+            <td class="cell-row-2" colspan="2">ІМ-43</td>
+            <td class="cell-row-2">ЛР-2, Варіант 4</td>
+        </tr>
+
+        <tr>
+            <td class="cell-row-3" colspan="2"></td>
+            <td class="cell-row-3" colspan="3"></td>
+        </tr>
+    </table>
+
+    <div class="target-position">
+        <div class="line-horizontal"></div>
+        <div class="line-vertical"></div>
+        <div class="outer-circle"></div>
+        <div class="inner-circle"></div>
+    </div>
+
+    <div class="target-transform">
+        <div class="cross"></div>
+        <div class="outer-circle"></div>
+        <div class="inner-circle"></div>
+    </div>
+
+</body>
+
+</html>
