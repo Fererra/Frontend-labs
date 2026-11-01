@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.clickable {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#image-container {
+    min-height: 20px;
+}
+
+#main-image {
+    height: auto;
+    transition: width 0.3s;
+}
+
+.image-buttons {
+    margin-top: 15px;
+}
+
+.image-buttons button {
+    padding: 8px 16px;
+    margin-right: 8px;
+    font-size: 14px;
+    border: 1px solid #3b74bc;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #3b74bc;
+    cursor: pointer;
+}
+
+.image-buttons button:hover {
+    background-color: #3b74bc;
+    color: #ffffff;
+}
+
+.image-buttons button:disabled {
+    border-color: #aaaaaa;
+    background-color: #eeeeee;
+    color: #aaaaaa;
+    cursor: not-allowed;
+}
+
+.image-status {
+    color: #555;
+    font-size: 14px;
+}

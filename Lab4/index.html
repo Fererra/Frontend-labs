@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML5, ЛР4, Сухоруков Микита, КПІ, ФІОТ">
+    <meta name="description" content="Лабораторна робота №4 з курсу Основи FE-технологій">
+    <title>Сухоруков М. С., ІМ-43. Лабораторна робота №4. Варіант 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Сухоруков Микита Сергійович</h2>
+    <p>Дата народження: 10.04.2007. Місце народження: м. Макіївка, Донецька область.</p>
+    <p>Освіта: Вишніський академічний ліцей "Основа".
+        Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського»,
+        факультет ФІОТ, спеціальність «Інженерія програмного забезпечення».</p>
+
+    <h3>Мої хобі:</h3>
+    <ul id="element-5" class="clickable">
+        <li>Тренування в спортзалі</li>
+        <li>Формула 1</li>
+        <li>Читання книг</li>
+        <li>Прогулянки на свіжому повітрі</li>
+    </ul>
+
+    <h3 class="element-6 clickable">Улюблені фільми:</h3>
+    <ol>
+        <li>Одинадцять друзів Оушена</li>
+        <li>Дванадцять друзів Оушена</li>
+        <li>Тринадцять друзів Оушена</li>
+        <li>Вісім подруг Оушена</li>
+    </ol>
+
+    <h3>Яремче</h3>
+    <p>Яремче — це перлина Карпат і найвідоміший туристичний кліматичний курорт Прикарпаття, що розташований у
+        мальовничій улоговині між горами на березі річки Прут. Місто зачаровує своїми ландшафтами, кришталево чистим
+        гірським повітрям, традиційною гуцульською архітектурою та знаменитим каскадним водоспадом Пробій.</p>
+
+    <div id="image-container">
+        <a id="image-link" href="https://yaremcha-miskrada.gov.ua/" target="_blank"
+            title="Офіційний сайт Яремчанської міської ради">
+            <img id="main-image"
+                src="https://karpaty.guide/wp-content/uploads/2025/06/vodospad-probij-yaremche-3-1290x1290.jpg"
+                alt="Водоспад Пробій, м. Яремче" width="600"
+                style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+        </a>
+    </div>
+
+    <div class="image-buttons">
+        <button type="button" id="btn-add">Додати</button>
+        <button type="button" id="btn-enlarge">Збільшити</button>
+        <button type="button" id="btn-shrink">Зменшити</button>
+        <button type="button" id="btn-remove">Видалити</button>
+    </div>
+    <p id="image-status" class="image-status"></p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
