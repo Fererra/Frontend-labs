@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Сухоруков М. С., ІМ-43. Лабораторна робота №5. Варіант 9 (завд. 1), 4 (завд. 2)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="data.js"></script>
+    <script src="table.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Завдання 1. Валідація форми</h2>
+
+        <form name="studentForm" action="index.html" method="post">
+            <div class="form-row" id="row-pib">
+                <label for="pib">1. ПІБ (ТТТТТТ Т.Т.):</label>
+                <input type="text" name="pib" id="pib" value="" placeholder="Сухоруков М.С."
+                    oninput="checkField(this)">
+            </div>
+
+            <div class="form-row" id="row-variant">
+                <label for="variant">2. Варіант (ЧЧ):</label>
+                <input type="text" name="variant" id="variant" value="" placeholder="09"
+                    oninput="checkField(this)">
+            </div>
+
+            <div class="form-row" id="row-group">
+                <label for="group">3. Група (ТТ-ЧЧ):</label>
+                <input type="text" name="group" id="group" value="" placeholder="ІМ-43"
+                    oninput="checkField(this)">
+            </div>
+
+            <div class="form-row" id="row-faculty">
+                <label for="faculty">4. Факультет (ТТТТ):</label>
+                <input type="text" name="faculty" id="faculty" value="" placeholder="ФІОТ"
+                    oninput="checkField(this)">
+            </div>
+
+            <div class="form-row" id="row-birthdate">
+                <label for="birthdate">5. Дата народж. (ЧЧ.ЧЧ.ЧЧЧЧ):</label>
+                <input type="text" name="birthdate" id="birthdate" value="" placeholder="01.01.2005"
+                    oninput="checkField(this)">
+            </div>
+
+            <p class="error-message" id="error-message"></p>
+
+            <input type="submit" value="Надіслати" name="Submit" onClick="return Formdata(this.form)">
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Завдання 2. Події таблиці</h2>
+
+        <p>
+            Колір з палітри:
+            <input type="color" id="palette" value="#3b74bc">
+        </p>
+        <p class="hint">
+            Клітинка №4: наведення — випадковий колір, клік — колір з палітри,
+            подвійний клік — зафарбування побічної діагоналі.
+        </p>
+
+        <table id="grid">
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td class="active-cell" onmouseover="randomColor(this)" onclick="paletteColor(this)"
+                    ondblclick="antiDiagonalColor()">4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>32</td>
+                <td>33</td>
+                <td>34</td>
+                <td>35</td>
+                <td>36</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="modal-overlay" id="modal" onclick="if (event.target === this) closeModal()">
+        <div class="modal-window">
+            <div id="modal-content"></div>
+            <button type="button" onclick="closeModal()">Закрити</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
